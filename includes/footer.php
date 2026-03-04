@@ -1,5 +1,4 @@
 <footer class="gc-footer">
-   <img src="images/footer-bg.png" alt="" class="gc-footer__wave-img" aria-hidden="true">
    <div class="gc-footer__bar">
       <p class="gc-footer__copy">&copy; Copyright <?php echo date('Y'); ?> Gong Cha Australia Pty Ltd</p>
       <div class="gc-footer__socials">
