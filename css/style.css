@@ -1,0 +1,1022 @@
+/* ── Local Avenir fonts (matching gongchatea.com.au) ── */
+@font-face {
+   font-family: 'Avenir';
+   src: url('../fonts/Avenir-Roman.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Named directly so navbar can reference the exact thin face */
+@font-face {
+   font-family: 'Avenir-Roman';
+   src: url('../fonts/Avenir-Roman.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Avenir';
+   src: url('../fonts/Avenir-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Avenir';
+   src: url('../fonts/Avenir-Heavy.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Avenir-Black';
+   src: url('../fonts/Avenir-Black.woff') format('woff');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* ── Icomoon icon font ── */
+@font-face {
+   font-family: 'icomoon';
+   src: url('../fonts/icomoon.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+   font-family: 'icomoon' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before        { content: "\e906"; }
+.icon-arrow-right:before   { content: "\e900"; }
+.icon-checked:before       { content: "\e901"; }
+.icon-facebook:before      { content: "\e902"; }
+.icon-arrow-down:before    { content: "\e903"; }
+.icon-hint:before          { content: "\e904"; }
+.icon-upload:before        { content: "\e905"; }
+.icon-wechat:before        { content: "\e907"; }
+
+:root{
+   --green:#27ae60;
+   --black:#333;
+   --white:#fff;
+   --bg-color:#eee;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+}
+
+*{
+   font-family: 'Avenir', Arial, sans-serif;
+   font-weight: 400;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   background: var(--green);
+   color:var(--white);
+   text-align: center;
+}
+
+.btn:hover{
+   background: var(--black);
+}
+
+.message{
+   display: block;
+   background: var(--bg-color);
+   padding:1.5rem 1rem;
+   font-size: 2rem;
+   color:var(--black);
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.container{
+   max-width: 1200px;
+   padding:2rem;
+   margin:0 auto;
+}
+
+.admin-product-form-container.centered{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+}
+
+.admin-product-form-container form{
+   max-width: 50rem;
+   margin:0 auto;
+   padding:2rem;
+   border-radius: .5rem;
+   background: var(--bg-color);
+}
+
+.admin-product-form-container form h3{
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 1rem;
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box{
+   width: 100%;
+   border-radius: .5rem;
+   padding:1.2rem 1.5rem;
+   font-size: 1.7rem;
+   margin:1rem 0;
+   background: var(--white);
+   text-transform: none;
+}
+
+.product-display{
+   margin:2rem 0;
+}
+
+.product-display .product-display-table{
+   width: 100%;
+   text-align: center;
+}
+
+.product-display .product-display-table thead{
+   background: var(--bg-color);
+}
+
+.product-display .product-display-table th{
+   padding:1rem;
+   font-size: 2rem;
+}
+
+
+.product-display .product-display-table td{
+   padding:1rem;
+   font-size: 2rem;
+   border-bottom: var(--border);
+}
+
+.product-display .product-display-table .btn:first-child{
+   margin-top: 0;
+}
+
+.product-display .product-display-table .btn:last-child{
+   background: crimson;
+}
+
+.product-display .product-display-table .btn:last-child:hover{
+   background: var(--black);
+}
+
+
+
+
+
+
+
+
+
+.login-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: var(--bg-color);
+}
+
+.login-wrapper .admin-product-form-container form{
+   width: 40rem;
+}
+
+.input-group{
+   position: relative;
+}
+
+.input-group i{
+   position: absolute;
+   top: 50%;
+   left: 1.5rem;
+   transform: translateY(-50%);
+   font-size: 1.7rem;
+   color: var(--black);
+}
+
+.input-group .box{
+   padding-left: 4.5rem;
+}
+
+.error-list{
+   background: #ffe0e0;
+   border-left: .4rem solid crimson;
+   border-radius: .5rem;
+   padding: 1rem 1.5rem 1rem 3rem;
+   margin-bottom: 1rem;
+   list-style: disc;
+}
+
+.error-list li{
+   font-size: 1.5rem;
+   color: crimson;
+   text-transform: none;
+   margin: .3rem 0;
+}
+
+.admin-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 0;
+   margin-bottom: 2rem;
+   border-bottom: var(--border);
+}
+
+.admin-header span{
+   font-size: 1.7rem;
+   color: var(--black);
+}
+
+.admin-header-actions{
+   display: flex;
+   gap: 1rem;
+}
+
+.view-store-btn{
+   width: auto;
+   margin-top: 0;
+   background: var(--green);
+   padding: .8rem 2rem;
+   font-size: 1.5rem;
+}
+
+.view-store-btn:hover{
+   background: var(--black);
+}
+
+.logout-btn{
+   width: auto;
+   margin-top: 0;
+   background: crimson;
+   padding: .8rem 2rem;
+   font-size: 1.5rem;
+}
+
+.logout-btn:hover{
+   background: var(--black);
+}
+
+/* ── User Page ── */
+
+.site-header{
+   background: var(--black);
+   padding: 1.5rem 0;
+}
+
+.site-header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+
+.site-title{
+   font-size: 2.5rem;
+   color: var(--white);
+   text-transform: uppercase;
+}
+
+.site-title i{
+   color: var(--green);
+   margin-right: .5rem;
+}
+
+.admin-link{
+   font-size: 1.5rem;
+   color: var(--white);
+   background: var(--green);
+   padding: .8rem 2rem;
+   border-radius: .5rem;
+}
+
+.admin-link:hover{
+   background: var(--white);
+   color: var(--black);
+}
+
+.section-title{
+   font-size: 2.5rem;
+   color: var(--black);
+   text-transform: uppercase;
+   margin: 3rem 0 2rem;
+   text-align: center;
+}
+
+.products-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+   gap: 2.5rem;
+   padding-bottom: 4rem;
+}
+
+.product-card{
+   background: var(--white);
+   border-radius: 1rem;
+   box-shadow: var(--box-shadow);
+   overflow: hidden;
+   transition: transform .2s, box-shadow .2s;
+}
+
+.product-card:hover{
+   transform: translateY(-.5rem);
+   box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+}
+
+.product-card-img{
+   width: 100%;
+   height: 22rem;
+   overflow: hidden;
+   background: var(--bg-color);
+}
+
+.product-card-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.product-card-info{
+   padding: 1.5rem;
+   text-align: center;
+}
+
+.product-card-info h3{
+   font-size: 1.8rem;
+   color: var(--black);
+   margin-bottom: .5rem;
+}
+
+.product-price{
+   font-size: 1.8rem;
+   color: var(--green);
+   font-weight: 600;
+}
+
+.no-products{
+   font-size: 1.8rem;
+   color: var(--black);
+   text-align: center;
+   grid-column: 1 / -1;
+   padding: 4rem 0;
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .product-display{
+      overflow-y:scroll;
+   }
+
+   .product-display .product-display-table{
+      width: 80rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}
+
+
+/* ============================================================
+   GONG CHA — NAVBAR
+   ============================================================ */
+
+:root {
+   --gc-red: #c8102e;   /* exact Gong cha brand red */
+}
+
+.gc-navbar {
+   background: var(--gc-red);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+.gc-navbar__inner {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 3rem;
+   height: 6.4rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* Logo */
+.gc-navbar__logo {
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   margin-right: 4rem;
+}
+
+.gc-navbar__logo img {
+   display: block;
+   height: 3rem;
+   width: auto;
+}
+
+/* Nav links */
+.gc-navbar__nav {
+   display: flex;
+   align-items: stretch;   /* links fill full bar height for underline effect */
+   gap: 0;
+   flex-wrap: nowrap;
+   height: 100%;
+}
+
+.gc-navbar__link {
+   font-family: 'Avenir-Roman', 'Avenir', Arial, sans-serif;
+   font-size: 1.65rem;
+   font-weight: 400;
+   color: rgba(255,255,255,.88);
+   padding: 0 1.2rem;
+   white-space: nowrap;
+   text-transform: none;
+   letter-spacing: .01em;
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid transparent;  /* reserve space, invisible by default */
+   transition: color .15s, border-color .15s;
+}
+
+.gc-navbar__link:hover {
+   color: #fff;
+}
+
+/* Active: white underline only — no background */
+.gc-navbar__link--active {
+   color: #fff;
+   border-bottom-color: #fff;
+}
+
+/* Hamburger */
+.gc-navbar__toggle {
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   gap: .5rem;
+   width: 3.2rem;
+   height: 3.2rem;
+   background: transparent;
+   cursor: pointer;
+   padding: .4rem;
+}
+
+.gc-navbar__toggle span {
+   display: block;
+   height: 2px;
+   background: #fff;
+   border-radius: 2px;
+   transition: transform .3s, opacity .3s;
+}
+
+.gc-navbar__toggle--open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.gc-navbar__toggle--open span:nth-child(2) { opacity: 0; }
+.gc-navbar__toggle--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 960px) {
+   .gc-navbar__toggle { display: flex; }
+
+   .gc-navbar__nav {
+      display: none;
+      position: absolute;
+      top: 6.4rem;
+      left: 0;
+      right: 0;
+      height: auto;
+      background: var(--gc-red);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: .8rem 3rem 1.6rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+   }
+
+   .gc-navbar__nav--open { display: flex; }
+
+   .gc-navbar__link {
+      width: 100%;
+      font-size: 1.45rem;
+      padding: .9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+   }
+
+   .gc-navbar__link--active {
+      border-bottom-color: rgba(255,255,255,.15);
+      color: #fff;
+      font-weight: 700;
+   }
+}
+
+
+/* ============================================================
+   GONG CHA — FOOTER
+   ============================================================ */
+
+/*
+ * footer-bg.png is 3374×242px — a wave that transitions from white (top)
+ * to dark brown (bottom). We render it as a block image so the wave sits
+ * on the white page background and blends into the dark footer bar below.
+ */
+.gc-footer {
+   background: #2b1d0e;
+   line-height: 0; /* collapse whitespace gap under the img */
+}
+
+.gc-footer__wave-img {
+   display: block;
+   width: 100%;
+   height: auto;
+   line-height: 0;
+}
+
+.gc-footer__bar {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 1.6rem;
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: .8rem 2.4rem 1.4rem;
+   line-height: normal;
+}
+
+.gc-footer__copy {
+   font-size: 1.25rem;
+   color: rgba(255,255,255,.55);
+   text-transform: none;
+   white-space: nowrap;
+}
+
+.gc-footer__socials {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.gc-footer__socials a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgba(255,255,255,.7);
+   font-size: 1.6rem;
+   transition: color .2s;
+}
+
+.gc-footer__socials a:hover {
+   color: #fff;
+}
+
+
+/* ============================================================
+   SHARED PAGE UTILITIES
+   ============================================================ */
+
+.gc-section-label {
+   display: inline-block;
+   font-size: 1.2rem;
+   font-weight: 600;
+   letter-spacing: .15em;
+   text-transform: uppercase;
+   color: var(--gc-red);
+   margin-bottom: 1rem;
+}
+
+.gc-section-title {
+   font-family: 'Avenir-Black', 'Avenir', Arial, sans-serif;
+   font-size: clamp(2.8rem, 4vw, 4.2rem);
+   font-weight: 700;
+   color: #1a1a1a;
+   line-height: 1.2;
+   margin-bottom: 2rem;
+   text-transform: none;
+}
+
+.gc-btn {
+   display: inline-block;
+   background: var(--gc-red);
+   color: #fff;
+   font-size: 1.5rem;
+   font-weight: 500;
+   padding: 1.2rem 3.2rem;
+   border-radius: .4rem;
+   text-transform: none;
+   letter-spacing: .02em;
+   transition: background .2s, transform .15s;
+}
+
+.gc-btn:hover {
+   background: #a50d24;
+   transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+
+/* Hero */
+.gc-about-hero {
+   position: relative;
+   height: 52rem;
+   background: url('images/Gong-Cha-Day-2-0707-RGB.png') center / cover no-repeat;
+   display: flex;
+   align-items: center;
+}
+
+.gc-about-hero__overlay {
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(120deg, rgba(200,16,46,.82) 0%, rgba(26,8,4,.55) 100%);
+}
+
+.gc-about-hero__content {
+   position: relative;
+   z-index: 1;
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 2.4rem;
+}
+
+.gc-about-hero__eyebrow {
+   font-size: 1.3rem;
+   font-weight: 600;
+   letter-spacing: .2em;
+   text-transform: uppercase;
+   color: rgba(255,255,255,.75);
+   margin-bottom: 1.2rem;
+}
+
+.gc-about-hero__title {
+   font-family: 'Avenir-Black', 'Avenir', Arial, sans-serif;
+   font-size: clamp(3.6rem, 6vw, 6.4rem);
+   font-weight: 700;
+   color: #fff;
+   line-height: 1.15;
+   text-transform: none;
+}
+
+/* Sections */
+.gc-about-section {
+   padding: 8rem 0;
+}
+
+.gc-about-section__inner {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 2.4rem;
+}
+
+/* Story */
+.gc-about-story {
+   background: #fff;
+}
+
+.gc-about-story__grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 6rem;
+   align-items: center;
+}
+
+.gc-about-story__text p {
+   font-size: 1.55rem;
+   color: #555;
+   line-height: 1.8;
+   text-transform: none;
+   margin-bottom: 1.6rem;
+}
+
+.gc-about-story__img-wrap {
+   border-radius: 1.2rem;
+   overflow: hidden;
+   box-shadow: 0 2rem 5rem rgba(0,0,0,.12);
+}
+
+.gc-about-story__img {
+   width: 100%;
+   height: 42rem;
+   object-fit: cover;
+   display: block;
+}
+
+/* Values */
+.gc-about-values {
+   background: #faf7f5;
+   text-align: center;
+}
+
+.gc-about-values .gc-section-title {
+   margin-bottom: 4rem;
+}
+
+.gc-values-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2.4rem;
+}
+
+.gc-value-card {
+   background: #fff;
+   border-radius: 1.2rem;
+   padding: 3.2rem 2rem;
+   box-shadow: 0 .4rem 2rem rgba(0,0,0,.06);
+   transition: transform .2s, box-shadow .2s;
+}
+
+.gc-value-card:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 1rem 3rem rgba(0,0,0,.1);
+}
+
+.gc-value-card__icon {
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   background: #fdf0f1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 2rem;
+   color: var(--gc-red);
+}
+
+.gc-value-card h3 {
+   font-size: 1.7rem;
+   font-weight: 600;
+   color: #1a1a1a;
+   margin-bottom: 1rem;
+   text-transform: none;
+}
+
+.gc-value-card p {
+   font-size: 1.4rem;
+   color: #666;
+   line-height: 1.7;
+   text-transform: none;
+}
+
+/* CTA */
+.gc-about-cta {
+   background: var(--gc-red);
+   padding: 7rem 2.4rem;
+   text-align: center;
+}
+
+.gc-about-cta__inner {
+   max-width: 64rem;
+   margin: 0 auto;
+}
+
+.gc-about-cta h2 {
+   font-family: 'Avenir-Black', 'Avenir', Arial, sans-serif;
+   font-size: clamp(2.8rem, 4vw, 4rem);
+   color: #fff;
+   margin-bottom: 1.4rem;
+   text-transform: none;
+}
+
+.gc-about-cta p {
+   font-size: 1.6rem;
+   color: rgba(255,255,255,.8);
+   margin-bottom: 3rem;
+   text-transform: none;
+   line-height: 1.7;
+}
+
+.gc-about-cta .gc-btn {
+   background: #fff;
+   color: var(--gc-red);
+   font-weight: 600;
+}
+
+.gc-about-cta .gc-btn:hover {
+   background: #f0e8e8;
+}
+
+/* About responsive */
+@media (max-width: 900px) {
+   .gc-about-story__grid { grid-template-columns: 1fr; gap: 3rem; }
+   .gc-values-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+   .gc-about-hero { height: 38rem; }
+   .gc-values-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ============================================================
+   MENU PAGE
+   ============================================================ */
+
+.gc-menu-page {
+   background: #fff;
+   min-height: 70vh;
+}
+
+.gc-menu-layout {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 5rem 3rem 8rem;
+   display: grid;
+   grid-template-columns: 18rem 1fr;
+   gap: 4rem;
+   align-items: start;
+}
+
+/* Sidebar */
+.gc-menu-sidebar__title {
+   font-family: 'Avenir-Black', 'Avenir', Arial, sans-serif;
+   font-size: 4.2rem;
+   font-weight: 900;
+   color: #1a1a1a;
+   line-height: 1.1;
+   text-transform: none;
+   margin-bottom: 3.2rem;
+   letter-spacing: -.01em;
+}
+
+.gc-menu-sidebar__nav {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+}
+
+.gc-menu-cat {
+   font-family: 'Avenir', Arial, sans-serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #333;
+   padding: .55rem 0;
+   text-transform: none;
+   transition: color .15s;
+   line-height: 1.6;
+}
+
+.gc-menu-cat:hover {
+   color: var(--gc-red);
+}
+
+.gc-menu-cat--active {
+   color: var(--gc-red);
+   font-weight: 700;
+}
+
+/* Grid — 3 columns matching real site */
+.gc-menu-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0;                        /* real site has no gap — cards sit flush */
+   background: #fff;
+}
+
+/* Card — flat, no radius, no shadow, matches real site */
+.gc-menu-card {
+   background: #fff;
+   overflow: hidden;
+   cursor: pointer;
+   position: relative;
+}
+
+/* Subtle hover outline like the real site */
+.gc-menu-card:hover {
+   outline: 1px solid #e8e0d8;
+}
+
+/* Image area — cream background, image contained & centred */
+.gc-menu-card__img-wrap {
+   background: #f5f0e8;
+   aspect-ratio: 3 / 4;           /* tall portrait ratio matching real site */
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.5rem;
+}
+
+.gc-menu-card__img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;           /* contain — shows full drink, not cropped */
+   display: block;
+   transition: transform .3s;
+}
+
+.gc-menu-card:hover .gc-menu-card__img {
+   transform: scale(1.03);
+}
+
+/* Card text */
+.gc-menu-card__info {
+   padding: 1.4rem 1.6rem 2rem;
+}
+
+.gc-menu-card__name {
+   font-family: 'Avenir', Arial, sans-serif;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gc-red);
+   margin-bottom: .4rem;
+   text-transform: none;
+   line-height: 1.35;
+}
+
+.gc-menu-card__kj {
+   font-family: 'Avenir', Arial, sans-serif;
+   font-size: 1.3rem;
+   font-weight: 400;
+   color: #555;
+   text-transform: none;
+   letter-spacing: .01em;
+}
+
+.gc-menu-card__price {
+   font-size: 1.4rem;
+   color: #555;
+   font-weight: 400;
+   text-transform: none;
+}
+
+/* Menu responsive */
+@media (max-width: 1024px) {
+   .gc-menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+   .gc-menu-layout {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding-top: 3rem;
+   }
+   .gc-menu-sidebar__nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: .6rem;
+   }
+   .gc-menu-cat {
+      background: #f5f0e8;
+      padding: .5rem 1.4rem;
+      border-radius: 2rem;
+   }
+   .gc-menu-cat--active {
+      background: var(--gc-red);
+      color: #fff;
+   }
+}
+
+@media (max-width: 560px) {
+   .gc-menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
